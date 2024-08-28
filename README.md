@@ -80,27 +80,29 @@ The code in __________ solves this.
 Consider an economy where a large number of identical households seek to maximize their discounted lifetime utility given by
 
 $$
-\max_{{c_t}^\infty} \sum{t=0}^\infty \beta^t \ln(c_t),
+\max_{{c_t}^\infty} \sum_{t = 0}^{\infty} \beta^t \ln(c_t)
 $$
 
-subject to
+such that
 
 $$
 c_t + a_{t+1} \leq w_t n_t^s + a_t(1 + r_t),
 $$
 
 $$
-c_t, a_t \geq 0, \quad 0 \leq n_t^s \leq 1, \quad a_0 > 0 \text{ is given}.
+c_t, a_t \geq 0, \quad 0 \leq n_t^s \leq 1, \quad a_0 > 0
 $$
 
-where $c_t$ and $n_t^s$ are consumption and labor supply of the household at time $t$. Households have one unit of time available that can be used for leisure and work. There are competitive labor and capital markets where the wage rate $w_t$ and interest rate $r_t$ (net of depreciation) are competitively settled. Households lend their capital to firms to provide capital services. Firms seek to maximize their profits by picking optimal $k_t$ and $n_t^d$, where
+$c_t$ and $n_t^s$ are consumption and labor supply of the household at time $t$. Households have one unit of time available that can be used for leisure and work. Wage rate $w_t$ and interest rate $r_t$ (net of depreciation) are competitively settled. Firms maximize their profits by picking optimal $k_t$ and $n_t^d$, where
 
 $$
 \Pi_t = \max_{k_t, n_t^d} \left( f(k_t, n_t^d) - w_t n_t^d - (r_t + \delta) k_t \right),
 $$
 
-and the production technology is given by $f(k_t, n_t) = k_t^\alpha n_t^{1-\alpha}$.
+Production technology is given by $f(k_t, n_t) = k_t^\alpha n_t^{1-\alpha}$.
 
-Capital depreciates at rate $0 < \delta < 1$. All the capital and production units (firms) are owned by households.
+Capital depreciates at rate $0 < \delta < 1$. 
+
+
 
 
