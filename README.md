@@ -58,6 +58,39 @@ Then we will look at an economy where the monetary authority does not have any c
 
 Finally we will look at an economy where the monetary authority is very dovish and does not care about inflation at all, i.e. $\chi_\pi = 0$, and for an economy where the monetary authority is very hawkish and cares strongly about inflation, for instance $\chi_\pi = 2$. We will, again, see the overall loss for 1000 periods using the given loss function.
 
+We intialize the [parameters](https://github.com/oruc47/matlab_macro_economic_sim/blob/2a3dea47b8470a950fd19e3236ad3760112c766c/new_keynesian_simulation.m#L1C1-L30C17)
+
+and then depending on the scenario we can iteratively calculate the values. For example in this case when we compare the monetary authorities
+credibility. All the functions are simply the functions we have/derived from above. 
+
+```
+for j = 1:length(lambda_values)
+    lambda = lambda_values(j);
+    loss = 0;
+    y(1) = y0;
+    pi(1) = pi0;
+    epsilon(1) = epsilon0;
+    zeta(1) = zeta0;
+    
+    for t = 2:T
+        epsilon(t) = rho_epsilon * epsilon(t-1) + epsilon_shock(t);
+        zeta(t) = rho_zeta * zeta(t-1) + zeta_shock(t);
+        Et_pi_next = lambda * pi_star + (1 - lambda) * pi(t-1);
+        it = rn + pi(t-1) + x_pi * (pi(t-1) - pi_star) + x_y * (y(t-1) - y_bar); % Taylor rule
+        y(t) = rho * y(t-1) + (1 - rho) * y_bar - (1/theta) * (it - Et_pi_next - rn) + epsilon(t);
+        pi(t) = beta * Et_pi_next + omega * (y(t) - y_bar) + zeta(t);
+        loss = loss + delta^(t-1) * ((y(t) - y_bar)^2 + mu * (pi(t) - pi_star)^2);
+    end
+    
+    loss_values(j) = loss;
+    disp(['Lambda = ', num2str(lambda)]);
+    disp(['Total loss: ', num2str(loss)]);
+end
+
+```
+
+
+
 | Metric                            | Value      |
 |-----------------------------------|------------|
 | **Average output**                | 0.94548    |
@@ -86,7 +119,7 @@ $$
 x_{n+1} = \Gamma(x_n) = \frac{1}{a} \left[ x_n^3 + x_n^2 + 1 \right].
 $$
 
-The code in __________ solves this.
+The code [here](https://github.com/oruc47/matlab_macro_economic_sim/blob/2a3dea47b8470a950fd19e3236ad3760112c766c/contraction_mapping.m#L10C1-L26C4) solves this by iteratively applying the Gamma function to an inital guess and updating the value until a convergence is met. 
 
 ### Stochastic Real Business Cycle<a name = "rbcs"></a>
 
