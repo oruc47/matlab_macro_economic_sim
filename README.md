@@ -66,5 +66,14 @@ Finally we will look at an economy where the monetary authority is very dovish a
 | 0              | 0.014786      |
 | 2              | 0.032218      |
 
-As expected we see a greater loss in the situations where the monetary authority does not have any credibility and also where they are very hawkish. This makes sense as when the monetary authority does not have any credibility households and firms will deviate from the inflation target and increase volatility in output. Furthermore, a hawkish monetary authority would interfere more with the inflation of the economy thus increasing the loss of the output function. 
+As expected we see a greater loss in the situations where the monetary authority does not have any credibility and also where they are very hawkish. This makes sense as when the monetary authority does not have any credibility households and firms will deviate from the inflation target and increase volatility in output. Furthermore, a hawkish monetary authority would interfere more with the inflation of the economy thus increasing the loss of the output function.
+
+We can use MATLAB to find roots of higher order equations using a contraction mapping approach. This is especially useful in dynamic programming as it allows us to solve value functions that can be used to model economic growth. For example, consider the cubic equation, $g(x) = x^3 + x^2 - ax + 1 = 0$, $x \in A$, $A = R[0, 1]$. We define the operator
+
+$$
+x_{n+1} = \Gamma(x_n) = \frac{1}{a} \left[ x_n^3 + x_n^2 + 1 \right].
+$$
+
+The code in __________ solves this.
+
 
