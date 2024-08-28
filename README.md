@@ -98,11 +98,6 @@ $$
 \pi_{ll} & \pi_{lh} \\
 \pi_{hl} & \pi_{hh}
 \end{bmatrix}
-=
-\begin{bmatrix}
-\phi & 1 - \phi \\
-1 - \phi & \phi
-\end{bmatrix},
 $$
 
 where $0 < \phi < 1$.
