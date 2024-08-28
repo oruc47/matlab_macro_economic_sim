@@ -103,7 +103,32 @@ $$
 \text{ where } 0 < \phi < 1$.
 $$
 
-We can use MATLAB to numarically solve the model economy using Discrete State Space Value Function Iteration Method
+We can use MATLAB to calibrate the economy based on parameters from literature and also numarically solve the model economy using Discrete State Space Value Function Iteration Method. 
+
+### Standard Deviations of Key Economic Variables
+
+| Variable   | Description                                                             | Standard Deviation |
+|------------|-------------------------------------------------------------------------|--------------------|
+| `yt`       | Output (Cobb-Douglas production function)                               | 0.0049             |
+| `ct`       | Consumption (Output minus investment)                                   | 0.0034             |
+| `it`       | Investment (Change in capital stock)                                    | 0.0196             |
+| `lt`       | Hours worked                                                            | 0.0016             |
+| `wt`       | Wage rate                                                               | 0.0039             |
+| `ot`       | Labor productivity (Output per worker)                                  | 0.0039             |
+
+### Correlations between Output and Other Variables
+
+| Variables   | Correlation Coefficient |
+|-------------|-------------------------|
+| `yt` & `ct` | 0.6531                  |
+| `yt` & `it` | 0.8321                  |
+| `yt` & `lt` | 0.7247                  |
+| `yt` & `wt` | 0.9590                  |
+
+
+![Consumption](https://github.com/oruc47/matlab_macro_economic_sim/blob/2726c3313db1537f14077c2e414047d6131e8be7/images/consumption.png)
+
+![Capital](https://github.com/oruc47/matlab_macro_economic_sim/blob/2726c3313db1537f14077c2e414047d6131e8be7/images/capital.png)
 
 
 Consider an economy where a large number of identical households seek to maximize their discounted lifetime utility given by
