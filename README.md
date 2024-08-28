@@ -107,5 +107,7 @@ We can rewrite this model using the social planner's problem and using Value Fun
 
 The nice thing about simulating this optimization over code is that we can see what happens when we stimulate other exogenous factors. For example, in the case where there is a earthquake that destorys 20% of the economy. 
 
+We can see the result of the simulation graphically:
 
+![test](https://github.com/oruc47/matlab_macro_economic_sim/blob/1047899bcb46f91ef777b5a2aa261d04f44df296/images/shock.png)
 
