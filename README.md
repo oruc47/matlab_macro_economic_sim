@@ -99,6 +99,7 @@ $$
 \pi_{hl} & \pi_{hh}
 \end{bmatrix}
 $$
+and
 $$=
 \begin{bmatrix}
 \phi & 1 - \phi \\
