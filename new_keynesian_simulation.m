@@ -52,7 +52,6 @@ disp(['Standard deviation of output: ', num2str(std_y)]);
 disp(['Standard deviation of inflation: ', num2str(std_pi)]);
 
 zeta0 = 0;
-T = 1000;
 
 y = zeros(T, 1);
 pi = zeros(T, 1);
@@ -88,15 +87,21 @@ for j = 1:length(lambda_values)
     disp(['Total loss: ', num2str(loss)]);
 end
 
-T = 1000;
+lambda = 0.5; %reset lambda
+
 
 y = zeros(T, 1);
 pi = zeros(T, 1);
 epsilon = zeros(T, 1);
 zeta = zeros(T, 1);
 
+epsilon_shock = sigma_epsilon * randn(T, 1);
+zeta_shock = sigma_zeta * randn(T, 1);
+
+
 x_pi_values = [0, 2];
 loss_values = zeros(size(x_pi_values));
+
 
 for j = 1:length(x_pi_values)
     x_pi = x_pi_values(j);
