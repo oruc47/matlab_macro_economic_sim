@@ -40,7 +40,7 @@ $$
 The overall loss function in the economy, $L$, is measured by the following function
 
 $$
-L = \sum_{t=0}^{\infty} \delta^t \left[ (y_t - \bar{y})^2 + \mu (\pi_t - \pi^*)^2 \right], \quad 0 < \delta < 1, \mu > 0.
+L = \sum_{t=0}^{\infty} \delta^t \left((y_t - \bar{y})^2 + \mu (\pi_t - \pi^*)^2 \right), \quad 0 < \delta < 1, \mu > 0.
 $$
 
 First we use initial conditions simulate output, inflation, and the interest rate policy for 1000 periods. We will set $\rho = 0.8$, $\bar{y} = 1$, $\theta = 2$, $r^n = 0.04$, $\beta = 0.95$, $\delta = 0.95$, $\rho_\epsilon = \rho_\zeta = 0.9$, $\sigma_\epsilon^2 = \sigma_\zeta^2 = 0.001$, $\omega = 0.5$, $\mu = 0.2$, $\lambda = 0.5$, $\pi^* = 0.02$, and $\chi_\pi = \chi_y = 0.5$. We will assume that the initial conditions are given by $y_0 = 0.95$, $\pi_0 = 0.02$, and $\epsilon_0 = \zeta_0 = 0$. 
