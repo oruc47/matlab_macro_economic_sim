@@ -98,13 +98,16 @@ $$
 \pi_{ll} & \pi_{lh} \\
 \pi_{hl} & \pi_{hh}
 \end{bmatrix}
-$$=
+$$
+$$
+=
 \begin{bmatrix}
 \phi & 1 - \phi \\
 1 - \phi & \phi
 \end{bmatrix},
 
 where $0 < \phi < 1$.
+$$
 
 
 Consider an economy where a large number of identical households seek to maximize their discounted lifetime utility given by
