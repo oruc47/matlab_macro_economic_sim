@@ -109,5 +109,7 @@ The nice thing about simulating this optimization over code is that we can see w
 
 We can see the result of the simulation graphically:
 
-![test](https://github.com/oruc47/matlab_macro_economic_sim/blob/1047899bcb46f91ef777b5a2aa261d04f44df296/images/shock.png)
+![Value and Policy Function](https://github.com/oruc47/matlab_macro_economic_sim/blob/aebca08b3031f267fe47b7fb2e5b7c2284bd602e/images/vp.png)
+
+![Economic Variables After Shock](https://github.com/oruc47/matlab_macro_economic_sim/blob/1047899bcb46f91ef777b5a2aa261d04f44df296/images/shock.png)
 
