@@ -80,7 +80,7 @@ The code in __________ solves this.
 Consider an economy where a large number of identical households seek to maximize their discounted lifetime utility given by
 
 $$
-\max_{{c_t}_{t=0}^\infty} \sum_{t=0}^\infty \beta^t \ln(c_t),
+\max_{c_t_{t=0}^\infty} \sum_{t=0}^\infty \beta^t \ln(c_t),
 $$
 
 subject to
