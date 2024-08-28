@@ -58,9 +58,7 @@ Then we will look at an economy where the monetary authority does not have any c
 
 Finally we will look at an economy where the monetary authority is very dovish and does not care about inflation at all, i.e. $\chi_\pi = 0$, and for an economy where the monetary authority is very hawkish and cares strongly about inflation, for instance $\chi_\pi = 2$. We will, again, see the overall loss for 1000 periods using the given loss function.
 
-We intialize the [parameters](https://github.com/oruc47/matlab_macro_economic_sim/blob/2a3dea47b8470a950fd19e3236ad3760112c766c/new_keynesian_simulation.m#L1C1-L30C17)
-
-and then depending on the scenario we can iteratively calculate the values. For example in this case when we compare the monetary authorities
+We intialize the [parameters](https://github.com/oruc47/matlab_macro_economic_sim/blob/2a3dea47b8470a950fd19e3236ad3760112c766c/new_keynesian_simulation.m#L1C1-L30C17) and then depending on the scenario we can iteratively calculate the values. For example in this case when we compare the monetary authorities
 credibility. All the functions are simply the functions we have/derived from above. 
 
 ```
