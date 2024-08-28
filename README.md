@@ -78,7 +78,7 @@ The code in __________ solves this.
 
 We can also consider the following RBC model where the Social Planner’s problem is given by
 
-$$E_{t=0} \left[ \max_{\{c_t, l_t\}^\infty} \sum_{t=0}^\infty \beta^t U(c_t, l_t) \right]$$
+$$E_{t=0} \left[ \max_{\{{c_t, l_t}\}^\infty} \sum_{t=0}^\infty \beta^t U(c_t, l_t) \right]$$
 
 subject to:
 
