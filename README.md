@@ -1,10 +1,14 @@
 # matlab_macro_economic_sim
 Different Macroeconomic Simulations in MATLAB. Includes New Keynesian DSGE, deterministic and stochastic RBC, value and policy function iterations and optimizations.
 
-#Contents
-1. [New Keynesian DSGE](#dsge)
+# Contents
+## 1. [New Keynesian DSGE](#dsge)
+## 2. [Solve Contraction Mapping](#dsge)
+## 3. [Stochastic RBC](#dsge)
+## 4. [Deterministic RBC](#dsge)
 
-## New Keynesian Dynamic Stochastic General Equilibrium<a name = "dsge"></a>
+
+### New Keynesian Dynamic Stochastic General Equilibrium<a name = "dsge"></a>
 
 The following is a reduced form of the New Keynesian Model. Output follows the process
 
@@ -73,6 +77,9 @@ Finally we will look at an economy where the monetary authority is very dovish a
 
 As expected we see a greater loss in the situations where the monetary authority does not have any credibility and also where they are very hawkish. This makes sense as when the monetary authority does not have any credibility households and firms will deviate from the inflation target and increase volatility in output. Furthermore, a hawkish monetary authority would interfere more with the inflation of the economy thus increasing the loss of the output function.
 
+### Contraction Mapping<a name = "map"></a>
+
+
 We can use MATLAB to find roots of higher order equations using a contraction mapping approach. This is especially useful in dynamic programming as it allows us to solve value functions that can be used to model economic growth. For example, consider the cubic equation, $g(x) = x^3 + x^2 - ax + 1 = 0$, $x \in A$, $A = R[0, 1]$. We define the operator
 
 $$
@@ -80,6 +87,8 @@ x_{n+1} = \Gamma(x_n) = \frac{1}{a} \left[ x_n^3 + x_n^2 + 1 \right].
 $$
 
 The code in __________ solves this.
+
+### Stochastic Real Business Cycle<a name = "rbcs"></a>
 
 We can also consider the following RBC model where the Social Planner’s problem is given by
 
@@ -110,7 +119,7 @@ $$
 
 We can use MATLAB to calibrate the economy based on parameters from literature and also numarically solve the model economy using Discrete State Space Value Function Iteration Method. 
 
-### Standard Deviations of Key Economic Variables
+#### Standard Deviations of Key Economic Variables
 
 | Variable   | Description                                                             | Standard Deviation |
 |------------|-------------------------------------------------------------------------|--------------------|
@@ -121,7 +130,7 @@ We can use MATLAB to calibrate the economy based on parameters from literature a
 | `wt`       | Wage rate                                                               | 0.0039             |
 | `ot`       | Labor productivity (Output per worker)                                  | 0.0039             |
 
-### Correlations between Output and Other Variables
+#### Correlations between Output and Other Variables
 
 | Variables   | Correlation Coefficient |
 |-------------|-------------------------|
@@ -135,6 +144,7 @@ We can use MATLAB to calibrate the economy based on parameters from literature a
 
 ![Capital](https://github.com/oruc47/matlab_macro_economic_sim/blob/2726c3313db1537f14077c2e414047d6131e8be7/images/capital.png)
 
+### Deterministic Real Business Cycle <a name = "rbc"></a>
 
 Consider an economy where a large number of identical households seek to maximize their discounted lifetime utility given by
 
