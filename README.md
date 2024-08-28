@@ -103,6 +103,9 @@ Production technology is given by $f(k_t, n_t) = k_t^\alpha n_t^{1-\alpha}$.
 
 Capital depreciates at rate $0 < \delta < 1$. 
 
+We can rewrite this model using the social planner's problem and using Value Function Iteration we will be able to numerically find the value and policy functions. 
+
+The nice thing about simulating this optimization over code is that we can see what happens when we stimulate other exogenous factors. For example, in the case where there is a earthquake that destorys 20% of the economy. 
 
 
 
