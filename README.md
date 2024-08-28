@@ -76,6 +76,37 @@ $$
 
 The code in __________ solves this.
 
+1. Consider the following RBC model where the Social Planner’s problem is given by
+
+$$
+E_{t=0} \left\{ \max_{\{c_t, l_t\}_{t=0}^\infty} \sum_{t=0}^\infty \beta^t U(c_t, l_t) \right\}
+$$
+
+subject to:
+
+$$
+0 \leq c_t \leq e^{z_t} f(k_t, n_t) - k_{t+1} + (1 - \delta) k_t,
+$$
+$$
+l_t + n_t \leq 1, \quad c_t, l_t, n_t \geq 0, \quad k_0 \text{ is given}, \quad 1 > \beta, \delta > 0.
+$$
+
+Let $f(k_t, n_t) = k_t^\alpha n_t^{1-\alpha}$, and $U(c_t, l_t) = \theta \ln(c_t) + (1-\theta) \ln(l_t)$, where $0 \leq \alpha, \theta \leq 1$. Assume that $z_t$ follows a first-order symmetric Markov process where $z_t \in \{z_l, z_h\}$ with $z_l = 1 - z$, and $z_h = 1 + z$, $1 > z > 0$. The Markov transition probabilities are given by
+
+$$
+\Pi(z' | z) = \begin{bmatrix}
+\pi_{ll} & \pi_{lh} \\
+\pi_{hl} & \pi_{hh}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\phi & 1 - \phi \\
+1 - \phi & \phi
+\end{bmatrix},
+$$
+
+where $0 < \phi < 1$.
+
 
 Consider an economy where a large number of identical households seek to maximize their discounted lifetime utility given by
 
