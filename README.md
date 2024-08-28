@@ -1,5 +1,10 @@
 # matlab_macro_economic_sim
-Different Macroeconomic Simulations in MATLAB.
+Different Macroeconomic Simulations in MATLAB. Includes New Keynesian DSGE, deterministic and stochastic RBC, value and policy function iterations and optimizations.
+
+#Contents
+1. [New Keynesian DSGE](#dsge)
+
+## New Keynesian Dynamic Stochastic General Equilibrium<a name = "dsge"></a>
 
 The following is a reduced form of the New Keynesian Model. Output follows the process
 
