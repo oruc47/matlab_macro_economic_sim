@@ -3,9 +3,9 @@ Different Macroeconomic Simulations in MATLAB. Includes New Keynesian DSGE, dete
 
 # Contents
 ## 1. [New Keynesian DSGE](#dsge)
-## 2. [Solve Contraction Mapping](#dsge)
-## 3. [Stochastic RBC](#dsge)
-## 4. [Deterministic RBC](#dsge)
+## 2. [Solve Contraction Mapping](#map)
+## 3. [Stochastic RBC](#rbcs)
+## 4. [Deterministic RBC](#rbc)
 
 
 ### New Keynesian Dynamic Stochastic General Equilibrium<a name = "dsge"></a>
